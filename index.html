@@ -14,8 +14,21 @@
             <div class="ul">
                 <ul>
                     <li id="normalli" class="active"> <i class="fa-solid fa-table-cells"></i>Normal Table</li>
-                    <li id="customli"> <i class="fa-solid fa-table-cells"></i>Custom Table</li>
+                    <li id="customli" class="custom"> <i class="fa-solid fa-table-cells"></i>Custom Table</li>
                 </ul>
+            </div>
+            <div class="customarea">
+               <div class="customChiled" id="customC">
+                <span>
+                <label for="start">Starting Point</label><br>
+                <input type="number" name="" id="start" value="1">
+                </span>
+                <span>
+                <label for="end">Ending Point</label><br>
+                <input type="number" name="" id="end" value="10">
+                </span>
+                </div>
+
             </div>
             <div class="inputarea">
                 <form action="" id="form">
@@ -24,6 +37,7 @@
                     <input type="submit" value="Go" onclick="tableF();">
                 </form>
             </div>
+            <p id="msg"></p>
             <div class="tablearea">
                 <table id="insert">
                     <tr>
