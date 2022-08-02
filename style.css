@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* creating some variables */
+:root{
+    --backColor: #3e4444;
+    --frontcolor: #82b74b;
+    --frontcolor2: #fefbd8;
+}
+/* end variables */
+body{
+    background-color: var(--backColor);
+}
+.bdcontainer{
+    display: flex;
+    justify-content: center;
+}
+.maincontent{
+    width: 70vw;
+    padding-top: 10rem;
+}
+.ul ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+}
+.ul ul li,.ul i{
+    display: inline;
+    color: var(--frontcolor2);
+    font-size: 2rem;
+
+}
+.ul ul li{
+    cursor: pointer;
+    padding: 12px;
+}
+.ul i{
+    margin-right: 1rem;
+    
+}
+.active{
+    border-bottom: 4px solid var(--frontcolor2);
+}
+.inputarea{
+    width: 100%;
+    border: 3px solid var(--frontcolor2);
+    border-radius: 25px;
+    padding: 8px 22px;
+}
+.inputarea form{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 95% 1fr;
+    width: 100%;
+    height: 100%;
+}
+.inputarea input[type=number]{
+    width: 95%;
+    
+}
+.inputarea input{
+    background: transparent;
+    color: var(--frontcolor2);
+    border: none;
+    outline: none;
+    font-size: 2rem;
+}
+.inputarea i{
+    font-size: 2.5rem;
+    color: var(--frontcolor2);
+}
+.tablearea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+.tablearea table{
+    min-width: 30%;
+    color: var(--frontcolor2);
+
+}
+.bottomline{
+    margin: 20px 0;
+    border-bottom: 3px solid var(--frontcolor2);
+    text-align: left;
+}
+.leftline{
+    width: 8%;
+    border-left: 3px solid var(--frontcolor2);
+    padding: 8px;
+}
+td,th{
+    font-size: 2rem;
+}
