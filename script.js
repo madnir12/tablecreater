@@ -3,6 +3,7 @@ document.getElementById("form").addEventListener("submit",(event)=>{
 
 });
 function tableF(){
+    document.getElementById("insert").style.display ="block";
     document.getElementById("insert").innerHTML ="";
     let input = document.getElementById("input").value;
     let tableTH = `<tr>
